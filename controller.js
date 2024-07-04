@@ -18,6 +18,11 @@ var dadosLista = [];
 
 function salvarUser(){
     let nomeUser = document.getElementById('nomeUser').value;
+
     if(nomeUser){
-    }else{"Favor, informe um nome"}
+        dadosLista.push(nomeUser)
+        console.log(dadosLista);
+    }else{
+        alert("Favor, informe um nome")
+}
 }
