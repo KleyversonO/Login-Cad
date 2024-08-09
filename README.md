@@ -9,8 +9,28 @@ O site possui um Css simples, não tendo muitos enfeites, mas fazendo jus ao seu
 ![Png](img/pr.png)
 
 ## Função
-O site apenas tem a função de fazer uma simulação de uma tela de login, contendo Javascript, html, paginas diversas, e css, e com a função de ser direcionado a outros sites.
+O site apenas tem a função de fazer uma simulação de uma tela de cadastro simples, contendo Javascript, html e css, sendo seu real objetivo treino para apreender mais sobre o Javascript e sobre Array.
 
+## Linguagem utilizadas
+- DadosLista: é uma variável usado para armazenar os nomes digitados para que fiquem armazenados no array;
+
+- nomeUser: uma variável que é responsável por armazenar os noomes digitados;
+
+- tabela: é uma variável responsável pelo local aonde fica armazenado os nomes digitados;
+
+- i: tem a função de complementar o array para que de continuidade a sua função;
+
+- acessar: tem a função de adicionar o nome digitado a lista;
+
+- salvarUser: tem a função de adicionar um novo nome a lista;
+
+- criarLista: deixa aparente os nomes digitados da lista;
+
+- excluir: tem a função de apagar um nome já digitado na lista;
+
+- editar: tem a função de editar um nome que já está presente na lista;
+
+- 
 
 ## Tecnologias utilizadas 
 
