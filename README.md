@@ -6,7 +6,7 @@ O site possui um Css simples, não tendo muitos enfeites, mas fazendo jus ao seu
 
 
 ![Gif](img/tela.gif)
-![Png](img/pr.png)
+![Png](https://github.com/KleyversonO/Login-Cad/blob/main/Img/pr.png)
 
 ## Função
 O site apenas tem a função de fazer uma simulação de uma tela de cadastro simples, contendo Javascript, html e css, sendo seu real objetivo treino para apreender mais sobre o Javascript e sobre Array.
