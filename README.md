@@ -5,7 +5,7 @@ Essa é uma tela de cadastro feito de forma experimental para que seja estudado 
 O site possui um Css simples, não tendo muitos enfeites, mas fazendo jus ao seu propósito. Como citado antes, à uma barra aonde é possível digitar seu nome e um botão aonde é possível clicar para que você envie o nome digitado para uma lista, o nome fica aparente nessa lista, e surge também 2 botões, um escrito "Excluir" e o outro "Editar". Caso clique no botão excluir, o nome digitado irá desaparecer da lista, sendo assim excluido, caso clique no botão editar, o nome digitado irá voltar para a a barra aonde se digita o nome, e a partir dali é possível que você edite o nome digitado e depois o retorne para a lista.
 
 
-![Gif](img/tela.gif)
+![Gif](https://github.com/KleyversonO/Login-Cad/blob/main/Img/tela.gif)
 ![Png](https://github.com/KleyversonO/Login-Cad/blob/main/Img/pr.png)
 
 ## Função
