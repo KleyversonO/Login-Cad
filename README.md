@@ -30,6 +30,7 @@ O site apenas tem a função de fazer uma simulação de uma tela de cadastro si
 
 - editar: tem a função de editar um nome que já está presente na lista;
 
+- loginEmail: tem a função de adicionar ao projeto uma sessão de Email;
 
 ## Tecnologias utilizadas 
 
