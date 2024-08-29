@@ -27,13 +27,14 @@ function acessar() {
     }
 }
 
+
 // FUNÇÃO PARA VERIFICAÇÃO DE VALIDADE DE E-MAIL INFORMADO
-function verificaEmail() {
+/*function verificaEmail() {
     // Verifica se e-mail é válido
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    
     return emailRegex.test(emailUser);
 }
-
+*/
 //Função de criação do array para armazenamento de dados 
 var dadosLista = [];
 var emailLista = [];
@@ -42,10 +43,12 @@ function salvarUser() {
     let nomeUser = document.getElementById('nomeUser').value;
     let emailUser = document.getElementById('emailUser').value;
 
-    // Chama função de verificação de e-mail
-    verificaEmail();
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    if (nomeUser && emailUser) {
+    // Chama função de verificação de e-mail
+    //verificaEmail();
+
+    if (nomeUser && (emailRegex.test(emailUser))) {
         dadosLista.push(nomeUser);
         emailLista.push(emailUser);
         //console.log(dadosLista);
