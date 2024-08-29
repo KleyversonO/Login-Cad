@@ -1,7 +1,7 @@
 # Tela de Login
 Essa é uma tela de login com campos para nome e senha, aonde é necessário preenche-la corretamente para que você prossiga para a tela de cadastro do projeto.
 ![foto](img/login.png)
-![gif](img/logi.gif)
+![gif](img/loginn.gif)
 
 # Tela de cadastro
 Essa é uma tela de cadastro feito de forma experimental para que seja estudado e treinado a função de JavaScript e Array para criação de lista. No site é possível que você digite um nome, aonde depois é possível clicar no botão de "Acessar" o que fará com que o nome digitado apareça na lista abaixo, além de um campo para E-mail que só será possível enviar o nome e E-mail caso ambos estejam preenchidos de forma correta.
