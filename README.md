@@ -4,14 +4,14 @@ Essa é uma tela de login com campos para nome e senha, aonde é necessário pre
 ![gif](img/loginn.gif)
 
 # Tela de cadastro
-Essa é uma tela de cadastro feito de forma experimental para que seja estudado e treinado a função de JavaScript e Array para criação de lista. No site é possível que você digite um nome, aonde depois é possível clicar no botão de "Acessar" o que fará com que o nome digitado apareça na lista abaixo, além de um campo para E-mail que só será possível enviar o nome e E-mail caso ambos estejam preenchidos de forma correta.
+Essa é uma tela de cadastro feito de forma experimental para que seja estudado e treinado a função de JavaScript e Array para criação de lista. No site é possível que você digite um nome, aonde depois é possível clicar no botão de "Acessar" o que fará com que o nome digitado apareça na lista abaixo, além de um campo para E-mail e CPF, que só será possível enviar o nome, E-mail e CPF caso ambos estejam preenchidos de forma correta.
 
 ## Descrição 
-O site possui um Css simples, não tendo muitos enfeites, mas fazendo jus ao seu propósito. Como citado antes, à uma barra aonde é possível digitar seu nome e email e um botão aonde é possível clicar para que você envie o necessario que foi digitado para uma lista, ambos ficam aparente nessa lista, e surge também 2 botões, um escrito "Excluir" e o outro "Editar". Caso clique no botão excluir, o nome digitado irá desaparecer da lista, sendo assim excluido, caso clique no botão editar, o nome digitado irá voltar para a a barra aonde se digita o nome, e a partir dali é possível que você edite o nome digitado e depois o retorne para a lista.
+O site possui um Css simples, não tendo muitos enfeites, mas fazendo jus ao seu propósito. Como citado antes, à uma barra aonde é possível digitar seu nome, email e CPF e um botão aonde é possível clicar para que você envie o necessario que foi digitado para uma lista, ambos ficam aparente nessa lista, e surge também 2 botões, um escrito "Excluir" e o outro "Editar". Caso clique no botão excluir, os requisistos necessários digitados irá desaparecer da lista, sendo assim excluidos, caso clique no botão editar, o requisitos digitados irá voltar para a a barra aonde os digita, e a partir dali é possível que você edite-os e depois o retorne para a lista.
 
 
-![foto](img/cad.png)
-![gif](img/cad.gif)
+![foto](img/cadas.png)
+![gif](img/Cpf.gif)
 
 ## Função
 O site apenas tem a função de fazer uma simulação de uma tela de cadastro simples, contendo Javascript, html e css, sendo seu real objetivo treino para apreender mais sobre o Javascript e sobre Array.
