@@ -13,6 +13,14 @@ function salvarUser() {
         alert("Favor, informe um nome")
     }
 }
+if (!loginEmail || !loginSenha) {
+    alert('Favor preencher todos os campos');
+} else {
+    alert('Campos preenchidos com sucesso');
+
+    window.location.href = "cadastro.html";
+}
+
 // Validação de preenchimento
 function acessar() {
     let loginEmail = document.getElementById('loginEmail').value;
@@ -23,16 +31,9 @@ function acessar() {
     }
     );
     
-
-
-    if (!loginEmail || !loginSenha) {
-        alert('Favor preencher todos os campos');
-    } else {
-        alert('Campos preenchidos com sucesso');
-
-        window.location.href = 'cadastro.html';
-    }
 }
+
+
 
 
 // FUNÇÃO PARA VERIFICAÇÃO DE VALIDADE DE E-MAIL INFORMADO
