@@ -17,20 +17,14 @@ function salvarUser() {
 function acessar() {
     let loginEmail = document.getElementById('loginEmail').value;
     let loginSenha = document.getElementById('loginSenha').value;
-    document.getElementById('cpfForm').addEventListener('submit', function(event){
-        event.preventDefault();
-     
-    }
-    );
-    
-
-
+ 
+ 
     if (!loginEmail || !loginSenha) {
         alert('Favor preencher todos os campos');
     } else {
         alert('Campos preenchidos com sucesso');
-
-        window.location.href = "cadastro.html";
+ 
+        window.location.href = 'cadastro.html';
     }
 }
 
