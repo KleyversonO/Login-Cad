@@ -45,38 +45,44 @@ function acessar() {
 //Função de criação do array para armazenamento de dados 
 var dadosLista = [];
 var emailLista = [];
+var CPFlista = [];
 
 function salvarUser() {
     let nomeUser = document.getElementById('nomeUser').value;
     let emailUser = document.getElementById('emailUser').value;
+    let CpfUser = document.getElementById('CpfUser').value;
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     // Chama função de verificação de e-mail
     //verificaEmail();
 
-    if (nomeUser && (emailRegex.test(emailUser))) {
+    if (nomeUser && validarCPF(CpfUser) && (emailRegex.test(emailUser))) {
         dadosLista.push(nomeUser);
         emailLista.push(emailUser);
+        CPFlista.push(CpfUser);
         //console.log(dadosLista);
         criarLista();
         document.getElementById('nomeUser').value = "";
         document.getElementById('emailUser').value = "";
+        document.getElementById('CpfUser').value = "";
+    } else {
+        if (!validarCPF(CpfUser)) {
+            alert("Coloque um CPF válido");        
+        } else {
+                alert("Favor informar o nome e e email");
+            }
+        }
     }
-    else {
-        alert("Favor informar nome e e-mail");
-    }
-}
-
 // FUNÇÃO DE CRIAÇÃO DE LISTA
 // Esse código tem a função de fazer uma tabela no projeto para que armazene e mostre o nome do usuário, e suas ações. Também à a variável responsável por pegar o último nome escrito para que ele fique amostra. Também tem o botão com a fumção para excluir e editar
 //lenght é uma propriedade que calcula o tamanho da lista. tr e td é a propriedade responsável por parte do processo de criação de lista e tabela
 function criarLista() {
-    let tabela = document.getElementById('tabela').innerHTML = "<tr><th>Nome Usuário</th><th>Email</th><th>CPF</th><th>Ações</th></tr>";
-    for (let i = 0; i <= (dadosLista.length - 1); i++) { // A propriedade length tem como responsabilidade retornar a quantidade de caracteres de uma string ou o tamanho de um array. Caso a string ou o array esteja vazio, é retornado o valor 0.
-        tabela += "<tr><td>" + dadosLista[i] + "</td><td>" + emailLista[i] + "</td><td>  <button onclick='excluir(this.parentNode.parentNode.rowIndex)'>Excluir</button> <button onclick='editar(this.parentNode.parentNode.rowIndex)'>Editar</button> </td></tr>";
-        document.getElementById('tabela').innerHTML = tabela;
+    let tabela = "<tr><th>Nome Usuário</th><th>Email</th><th>CPF</th><th>Ações</th></tr>";
+    for (let i = 0; i < dadosLista.length; i++) {
+        tabela += "<tr><td>" + dadosLista[i] + "</td><td>" + emailLista[i] + "</td><td>" + CPFlista[i] + "</td><td><button onclick='excluir(" + (i + 1) + ")'>Excluir</button> <button onclick='editar(" + (i + 1) + ")'>Editar</button></td></tr>";
     }
+    document.getElementById('tabela').innerHTML = tabela;
 }
 // FUNÇÃO PARA EXCLUIR NOME DA LISTA
 // TEM A FUNÇÃO DE COLOCAR UM BOTÃO NA LISTA PARA QUE VOCÊ POSSA EXLUIR UM NOME JA ADICIONADO.
@@ -84,6 +90,7 @@ function criarLista() {
 function excluir(i) {
     dadosLista.splice((i - i), 1); //Splice é uma das maneiras mais úteis de manipular arrays em JavaScript. Ele permite remover ou adicionar elementos em uma posição específica de um array
     emailLista.splice((i - i), 1);
+    CPFlista.splice((i - i), 1);
     document.getElementById('tabela').deleteRow(i);
 }
 //FUNÇÃO PARA EDITAR O NOME DA LISTA
@@ -91,6 +98,7 @@ function excluir(i) {
 function editar(i) {
     document.getElementById("nomeUser").value = dadosLista[(i - 1)];
     document.getElementById("emailUser").value = emailLista[(i - 1)];
+    document.getElementById("CpfUser").value = CPFlista[(i - 1)];
     dadosLista.splice(dadosLista[(i - 1)], 1);
 }
 // TEM A FUNÇÃO DE VALIDAR O EMAIL ANTES DE ENVIA-LO PARA O PROJETO.
@@ -141,3 +149,6 @@ function validarCPF(cpf){
  
     return true;
 }
+
+
+
